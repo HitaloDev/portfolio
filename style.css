@@ -17,32 +17,36 @@ body {
 
 header {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     height: calc(100vh - 65px);
-}
-
-.section1 {
     color: white;
     padding: 0px 150px;
     width: 53%;
 }
 
-.section1 h1 {
+header img {
+    display: none;
+    margin: 20px 0 50px 0;
+    width: 120px;
+}
+
+header h1 {
     font-size: 39px;
     color: var(--green);
     font-weight: 400;
 }
 
-.section1 h2 {
+header h2 {
     font-size: 27px;
     font-weight: 400;
 }
 
-.section1 h1, h2 {
+header h1, h2 {
     margin-bottom: 15px;
 }
 
-.section1 p {
+header p {
     margin-bottom: 50px;
 }
 
@@ -54,39 +58,41 @@ button {
     padding: 9px 35px;
     color: var(--black);
     font-weight: bold;
+    width: 200px;
 }
 
 nav {
-    position: sticky;
-    top: 0;
-    background-color: var(--black);
-}
-
-.section2 {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
+    justify-content: space-between;
+    
+    background-color: var(--black);
     padding: 0 150px;
     height: 75px;
+
+    position: sticky;
+    top: 0;
 }
 
-.section2 img{
+nav img{
     height: 45px;
 }
 
-.links a {
-    text-decoration: none;
-    margin: 0 35px;
-    color: var(--green);
-
-    font-size: 22px;
-    position: relative;
-    padding-bottom: 6px; */
-
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
-.links a::after {
+nav ul a {
+    text-decoration: none;
+    color: var(--green);
+    font-size: 22px;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+nav ul a::after {
     content: " ";
     width: 0%;
     height: 4px;
@@ -98,7 +104,7 @@ nav {
     transition: 0.5s ease-in-out;
 }
 
-.links a:hover:after {
+nav ul a:hover:after {
     width: 90%;
 }
 
@@ -106,4 +112,62 @@ nav {
 .section3 {
     height: 1500px;
     background-color: rgb(116, 0, 0);
+}
+
+/*
+RESPONSIVIDADE -
+*/
+
+@media(max-width: 1000px){
+    
+    header {
+        padding: 0px 30px;
+        width: 100%;
+    }
+    
+    nav {
+        padding: 0 30px;
+    }
+}
+
+/*
+TABLET -
+*/
+@media (max-width: 767px) {
+    
+    
+    header img {
+        display: inline ;
+    }
+
+    nav {
+        padding: 0px;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+}
+
+/*
+CELULAR -
+*/
+
+@media (max-width: 480px) {
+    
+    header {
+        height: calc(100vh - 150px)
+    }
+
+    nav ul {
+        padding: 0px 30px;
+    }
+    
+    nav ul a {
+        font-size: 18px;
+    }
 }
