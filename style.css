@@ -92,6 +92,10 @@ nav ul a {
     padding-bottom: 6px;
 }
 
+nav ul a svg {
+    display: none;
+}
+
 nav ul a::after {
     content: " ";
     width: 0%;
@@ -151,6 +155,8 @@ TABLET -
     nav ul {
         padding: 0;
     }
+
+    
 }
 
 /*
@@ -160,14 +166,23 @@ CELULAR -
 @media (max-width: 480px) {
     
     header {
-        height: calc(100vh - 150px)
+        height: calc(100vh - 150px);
+    }
+
+    nav {
+        padding: 0px;
     }
 
     nav ul {
-        padding: 0px 30px;
+        padding: 0px 10px;
     }
     
     nav ul a {
-        font-size: 18px;
+        font-size: 14px;
+    }
+
+    nav ul a svg {
+        margin: 0 auto 7px;
+        display: block;
     }
 }
