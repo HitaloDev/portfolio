@@ -11,6 +11,10 @@
     --black: #212226;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--black);
 }
@@ -55,6 +59,8 @@ header p {
     background-color: var(--green);
     border: none;
     font-size: 13px;
+    text-decoration: none;
+    text-align: center;
     border-radius: 12px;
     padding: 9px 35px;
     color: var(--black);
@@ -225,12 +231,16 @@ nav ul a:hover:after {
 }
 
 
+.curriculo {
+    margin-bottom: 150px;
+}
+
 .curriculo h1 {
     font-size: 39px;
     color: var(--green);
     font-weight: 400;
     text-align: center;
-    margin-bottom: 150px;
+    margin-bottom: 120px;
 }
 
 .curriculo-content {
@@ -268,12 +278,68 @@ nav ul a:hover:after {
     font-size: 16px;
     text-decoration: none;
     margin-top: 30px;
+
 }
 
 .button2 img {
     margin-right: 15px;
 }
 
+footer {
+    color: white;
+    width: 45%;
+    margin: auto;
+    text-align: center;
+}
+
+footer h1 {
+    font-size: 45px;
+    color: var(--green);
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+footer p {
+    margin-bottom: 35px;
+}
+
+.icons {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button3 {
+    background-color: var(--green);
+    border: none;
+    font-size: 13px;
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 9px 35px;
+    color: var(--black);
+    font-weight: bold;
+}
+
+.icons {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.icons img {
+    width: 32px;
+    height: 32px;
+}
+
+.made {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(213, 213, 213);
+}
+
+.section4 {
+    height: 70px;
+}
 
 /*
 RESPONSIVIDADE -
@@ -372,5 +438,48 @@ CELULAR -
 
     .box {
         margin-bottom: 50px;
+    }
+
+    span {
+        text-decoration: none;
+        color: white;
+    }
+    
+
+    .curriculo-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .curriculo h1 {
+        margin-bottom: 63px;
+    }
+
+    .photo {
+        width: 300px;
+        margin-bottom: 50px;
+    }
+
+    .button2 {
+        width: 355px;
+    }
+
+    footer {
+        padding: 0 30px;
+        width: 100%;
+    }
+
+    footer h1 {
+        font-size: 30px;
+    }
+
+    .icons {
+        width: 80%;
+    }
+
+    .curriculo {
+        margin-bottom: 120px;
     }
 }
