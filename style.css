@@ -19,7 +19,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: calc(100vh - 65px);
+    height: calc(100vh - 75px);
     color: white;
     padding: 0px 150px;
     width: 53%;
@@ -47,10 +47,11 @@ header h1, h2 {
 }
 
 header p {
+    line-height: 29px;
     margin-bottom: 50px;
 }
 
-button {
+.button1 {
     background-color: var(--green);
     border: none;
     font-size: 13px;
@@ -72,6 +73,8 @@ nav {
 
     position: sticky;
     top: 0;
+
+
 }
 
 nav img{
@@ -113,10 +116,164 @@ nav ul a:hover:after {
 }
 
 
-.section3 {
-    height: 1500px;
-    background-color: rgb(116, 0, 0);
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100vh - 75px);
+
+    padding: 0 150px;
+    background-color: var(--black);
 }
+
+.description {
+    width: 40%;
+}
+
+.description h1 {
+    margin-bottom: 20px;
+    font-size: 39px;
+    color: var(--green);
+    font-weight: 400;
+    color: var(--green);
+}
+
+.description p {
+    line-height: 29px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.about-me img {
+    border-radius: 100%;
+    border: 5px solid var(--green);
+
+    width: 320px;
+    height: 320px;
+}
+
+.portfolio {
+    background-image: url(./assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin-bottom: 75px;
+}
+
+.port {
+    font-size: 39px;
+    color: var(--green);
+    font-weight: 400;
+    text-align: center;
+}
+
+.boxs {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+    margin-top: 150px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 500px;
+
+    background-color: rgba(255, 255, 255, 0.09);
+    border: 1px solid rgb(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+.box img {
+    width: 330px;
+    margin-bottom: 35px;
+}
+
+.skills ul{
+    display: flex;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.skills ul li {
+    font-size: 12px;
+    color: var(--green);
+    margin-right: 10px;
+    border: 1px solid var(--green);
+    border-radius: 10px;
+    padding: 1px 20px;
+}
+
+.skills h4 {
+    font-weight: 200;
+}
+
+.box h1, h4{
+    font-size: 16px;
+}
+
+.box h4 {
+    font-weight: 400;
+}
+
+.portfolio-text {
+    line-height: 24px;
+    width: 84%;
+}
+
+
+.curriculo h1 {
+    font-size: 39px;
+    color: var(--green);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.curriculo-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+}
+
+.content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-gap: 1.5rem;
+}
+
+.button2 {
+    display: flex;
+    background-color: #2F3034;
+    border: 1px solid var(--green);
+    border-radius: 14px;
+    color: var(--green);
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 65px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.button2 img {
+    margin-right: 15px;
+}
+
 
 /*
 RESPONSIVIDADE -
@@ -170,6 +327,10 @@ CELULAR -
     }
 
     nav {
+        position: fixed;
+        bottom: 0;
+        top: unset;
+        width: 100%;
         padding: 0px;
     }
 
@@ -184,5 +345,32 @@ CELULAR -
     nav ul a svg {
         margin: 0 auto 7px;
         display: block;
+    }
+
+    .about-me {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 0px 30px 50px 30px;
+    }
+
+    .about-me img {
+        border: 2px solid var(--green);
+        width: 100px;
+        height: 100px;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .boxs {
+        flex-direction: column;
+        padding: 0 30px;
+        margin-top: 40px;
+    }
+
+    .box {
+        margin-bottom: 50px;
     }
 }
