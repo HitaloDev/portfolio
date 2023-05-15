@@ -422,8 +422,8 @@ CELULAR -
 
     .about-me img {
         border: 2px solid var(--green);
-        width: 101px;
-        height: 101px;
+        width: 100px;
+        height: 100px;
     }
 
     .description {
