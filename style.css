@@ -255,13 +255,13 @@ nav ul a:hover:after {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 90%;
 }
 
 .content-grid {
     display: grid;
     grid-template-columns: 150px auto;
-    grid-gap: 1.5rem;
+    grid-gap: 2rem;
 }
 
 .button2 {
