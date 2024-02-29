@@ -212,11 +212,12 @@ nav ul a:hover:after {
 
 .skills ul li {
     font-size: 12px;
+    min-width: 80px;
+    text-align: center;
     color: var(--green);
     margin-right: 10px;
     border: 1px solid var(--green);
     border-radius: 10px;
-    padding: 5px 7px;
 }
 
 .skills h4 {
